@@ -24,5 +24,18 @@ http://localhost:3000/api/seed
 
 
 # Production notes:
+1. Comentar de la línea **20** a la **25** de ```app.module.ts```
 
+2. Ejecutar
+```
+docker compose -f docker-compose.prod.yml build
+docker compose -f docker-compose.prod.yml up
+```
+Al hacer cambios en un ```Dockerfile``` o levantar otro ```docker-compose```
+También se recomienda hacer un build y un up.
+En caso de tener errores se recomienda limpiar los volúmenes con ```docker compose down --volumes```
 
+***IMPORTANTE:*** Limpia toda la db
+Si es necesario se pueden limpiar las imágenes con ```docker image prune -a``` o ```docker image rm <id>``` según lo amerite
+
+[Repo original](https://github.com/Klerith/docker-teslo-shop)
