@@ -35,7 +35,9 @@ Al hacer cambios en un ```Dockerfile``` o levantar otro ```docker-compose```
 También se recomienda hacer un build y un up.
 En caso de tener errores se recomienda limpiar los volúmenes con ```docker compose down --volumes```
 
-***IMPORTANTE:*** Limpia toda la db
+***IMPORTANTE:*** ```docker compose down --volumes``` Limpia toda la db.
+
 Si es necesario se pueden limpiar las imágenes con ```docker image prune -a``` o ```docker image rm <id>``` según lo amerite
 
+Este es un repo de prueba tomado del curso [Docker - Guía práctica de uso para desarrolladores](https://www.udemy.com/course/docker-guia-practica/) de Fernando Herrera.
 [Repo original](https://github.com/Klerith/docker-teslo-shop)
